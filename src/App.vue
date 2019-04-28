@@ -1,16 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <input-numbers @sendOne="one = $event" @sendTwo="two = $event"></input-numbers>
+    <exec-numbers :one="this.one" :two="this.two"></exec-numbers>
   </div>
 </template>
 
 <script>
 import InputNumbers from "./components/InputNumbers.vue";
+import ExecNumbers from "./components/ExecNumbers.vue";
 
 export default {
   name: "app",
+
+  data() {
+    return {
+      one: 0,
+      two: 0
+    };
+  },
   components: {
-    InputNumbers
+    "input-numbers": InputNumbers,
+    "exec-numbers": ExecNumbers
   }
 };
 </script>
