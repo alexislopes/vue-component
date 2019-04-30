@@ -27,3 +27,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Tutorial for begginers
+See [this](https://bootstrap-vue.js.org/).
